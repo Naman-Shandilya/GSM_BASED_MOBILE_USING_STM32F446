@@ -90,7 +90,10 @@ void LCD_Send_String_On_Line2(char *str);
  * @param str : pointer to string
  * @retval None
  */
-void LCD_Display_Long_Message(char *str);
+void LCD_Display_Long_Message(char *string);
+
+
+uint32_t I2C_RdBuf(uint8_t DevAddr, uint8_t *pbuf, uint32_t cnt);
 
 
 #endif /* LCD_DRIVER_STM32F446_I2C_LCD_DRIVER_H_ */

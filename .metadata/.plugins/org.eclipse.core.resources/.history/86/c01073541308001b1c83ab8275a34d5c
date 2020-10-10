@@ -1,0 +1,34 @@
+/*
+ * GSM_DRIVER.c
+ *
+ *  Created on: 07-Oct-2020
+ *      Author: NAMAN
+ */
+
+#include"GSM_DRIVER.h"
+#include"string.h"
+#include"stdint.h"
+
+USART_InitTypeDef usart_init;
+
+//RX buffer to store incoming data from GSM module
+char RX_Buffer[RX_BUFFER_SIZE];
+
+//to store incomming SMS number
+char Incomins_SMS_Phone_Num[13] = {'\0'};
+
+//to store SMS recieved
+char Incoming_SMS_Message[100] = {'\0'};
+
+//-------------Private functions for UART and DMA configuration
+
+/**
+  *@brief    Configure UART
+  *@param    None
+  *@retval   None
+*/
+static void UART_Config(void)
+{
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA,ENABLE);
+
+}

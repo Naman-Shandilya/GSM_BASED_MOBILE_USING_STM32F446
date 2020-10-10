@@ -1,9 +1,9 @@
-22:36:57 **** Incremental Build of configuration Debug for project BASIC_MOBILE_USING_GSM ****
+15:59:24 **** Incremental Build of configuration Debug for project BASIC_MOBILE_USING_GSM ****
 make -j4 all 
 Building file: ../startup/startup_stm32.s
 Building file: ../src/main.c
-Building file: ../src/system_stm32f4xx.c
 Building file: ../src/syscalls.c
+Building file: ../src/system_stm32f4xx.c
 Invoking: MCU GCC Assembler
 Invoking: MCU GCC Compiler
 Invoking: MCU GCC Compiler
@@ -12,16 +12,16 @@ D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\De
 D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
 D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
 arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f4xx.d" -MT"src/system_stm32f4xx.o" -o "src/system_stm32f4xx.o" "../src/system_stm32f4xx.c"
 Finished building: ../startup/startup_stm32.s
  
-Building file: ../StdPeriph_Driver/src/misc.c
-Invoking: MCU GCC Compiler
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/misc.d" -MT"StdPeriph_Driver/src/misc.o" -o "StdPeriph_Driver/src/misc.o" "../StdPeriph_Driver/src/misc.c"
+../src/main.c:13:10: fatal error: STM32F446_I2C_LCD_Driver.h: No such file or directory
+ #include "STM32F446_I2C_LCD_Driver.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
 ../src/system_stm32f4xx.c: In function 'SetSysClock':
 ../src/system_stm32f4xx.c:760:5: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
      while ((RCC->CFGR & (uint32_t)RCC_CFGR_SWS ) != RCC_CFGR_SWS_PLL);
@@ -29,290 +29,19 @@ arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DS
 ../src/system_stm32f4xx.c:761:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
      {
      ^
+Building file: ../StdPeriph_Driver/src/misc.c
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+Invoking: MCU GCC Compiler
+D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
 Finished building: ../src/syscalls.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/misc.d" -MT"StdPeriph_Driver/src/misc.o" -o "StdPeriph_Driver/src/misc.o" "../StdPeriph_Driver/src/misc.c"
  
-Building file: ../StdPeriph_Driver/src/stm32f4xx_adc.c
-Invoking: MCU GCC Compiler
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_adc.d" -MT"StdPeriph_Driver/src/stm32f4xx_adc.o" -o "StdPeriph_Driver/src/stm32f4xx_adc.o" "../StdPeriph_Driver/src/stm32f4xx_adc.c"
-Finished building: ../src/main.c
-Finished building: ../StdPeriph_Driver/src/misc.c
- 
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_can.c
-Building file: ../StdPeriph_Driver/src/stm32f4xx_cec.c
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_can.d" -MT"StdPeriph_Driver/src/stm32f4xx_can.o" -o "StdPeriph_Driver/src/stm32f4xx_can.o" "../StdPeriph_Driver/src/stm32f4xx_can.c"
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cec.d" -MT"StdPeriph_Driver/src/stm32f4xx_cec.o" -o "StdPeriph_Driver/src/stm32f4xx_cec.o" "../StdPeriph_Driver/src/stm32f4xx_cec.c"
 Finished building: ../src/system_stm32f4xx.c
  
-Building file: ../StdPeriph_Driver/src/stm32f4xx_crc.c
-Invoking: MCU GCC Compiler
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_crc.d" -MT"StdPeriph_Driver/src/stm32f4xx_crc.o" -o "StdPeriph_Driver/src/stm32f4xx_crc.o" "../StdPeriph_Driver/src/stm32f4xx_crc.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_adc.c
- 
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_cec.c
-Building file: ../StdPeriph_Driver/src/stm32f4xx_cryp.c
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_cryp_aes.c
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cryp.d" -MT"StdPeriph_Driver/src/stm32f4xx_cryp.o" -o "StdPeriph_Driver/src/stm32f4xx_cryp.o" "../StdPeriph_Driver/src/stm32f4xx_cryp.c"
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cryp_aes.d" -MT"StdPeriph_Driver/src/stm32f4xx_cryp_aes.o" -o "StdPeriph_Driver/src/stm32f4xx_cryp_aes.o" "../StdPeriph_Driver/src/stm32f4xx_cryp_aes.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_can.c
- 
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_crc.c
-Building file: ../StdPeriph_Driver/src/stm32f4xx_cryp_des.c
- 
-Invoking: MCU GCC Compiler
-Building file: ../StdPeriph_Driver/src/stm32f4xx_cryp_tdes.c
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-Invoking: MCU GCC Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cryp_des.d" -MT"StdPeriph_Driver/src/stm32f4xx_cryp_des.o" -o "StdPeriph_Driver/src/stm32f4xx_cryp_des.o" "../StdPeriph_Driver/src/stm32f4xx_cryp_des.c"
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cryp_tdes.d" -MT"StdPeriph_Driver/src/stm32f4xx_cryp_tdes.o" -o "StdPeriph_Driver/src/stm32f4xx_cryp_tdes.o" "../StdPeriph_Driver/src/stm32f4xx_cryp_tdes.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_cryp.c
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_dac.c
-Invoking: MCU GCC Compiler
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dac.d" -MT"StdPeriph_Driver/src/stm32f4xx_dac.o" -o "StdPeriph_Driver/src/stm32f4xx_dac.o" "../StdPeriph_Driver/src/stm32f4xx_dac.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_cryp_aes.c
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_dbgmcu.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_cryp_des.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_cryp_tdes.c
-Invoking: MCU GCC Compiler
- 
- 
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-Building file: ../StdPeriph_Driver/src/stm32f4xx_dcmi.c
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dbgmcu.d" -MT"StdPeriph_Driver/src/stm32f4xx_dbgmcu.o" -o "StdPeriph_Driver/src/stm32f4xx_dbgmcu.o" "../StdPeriph_Driver/src/stm32f4xx_dbgmcu.c"
-Building file: ../StdPeriph_Driver/src/stm32f4xx_dfsdm.c
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dcmi.d" -MT"StdPeriph_Driver/src/stm32f4xx_dcmi.o" -o "StdPeriph_Driver/src/stm32f4xx_dcmi.o" "../StdPeriph_Driver/src/stm32f4xx_dcmi.c"
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dfsdm.d" -MT"StdPeriph_Driver/src/stm32f4xx_dfsdm.o" -o "StdPeriph_Driver/src/stm32f4xx_dfsdm.o" "../StdPeriph_Driver/src/stm32f4xx_dfsdm.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_dac.c
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_dma.c
-Invoking: MCU GCC Compiler
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dma.d" -MT"StdPeriph_Driver/src/stm32f4xx_dma.o" -o "StdPeriph_Driver/src/stm32f4xx_dma.o" "../StdPeriph_Driver/src/stm32f4xx_dma.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_dfsdm.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_dbgmcu.c
- 
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_dma2d.c
-Building file: ../StdPeriph_Driver/src/stm32f4xx_dsi.c
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_dcmi.c
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
- 
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dma2d.d" -MT"StdPeriph_Driver/src/stm32f4xx_dma2d.o" -o "StdPeriph_Driver/src/stm32f4xx_dma2d.o" "../StdPeriph_Driver/src/stm32f4xx_dma2d.c"
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dsi.d" -MT"StdPeriph_Driver/src/stm32f4xx_dsi.o" -o "StdPeriph_Driver/src/stm32f4xx_dsi.o" "../StdPeriph_Driver/src/stm32f4xx_dsi.c"
-Building file: ../StdPeriph_Driver/src/stm32f4xx_exti.c
-Invoking: MCU GCC Compiler
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_exti.d" -MT"StdPeriph_Driver/src/stm32f4xx_exti.o" -o "StdPeriph_Driver/src/stm32f4xx_exti.o" "../StdPeriph_Driver/src/stm32f4xx_exti.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_dsi.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_dma.c
- 
- 
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_dma2d.c
-Building file: ../StdPeriph_Driver/src/stm32f4xx_flash.c
-Building file: ../StdPeriph_Driver/src/stm32f4xx_flash_ramfunc.c
-Invoking: MCU GCC Compiler
- 
-Invoking: MCU GCC Compiler
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-Building file: ../StdPeriph_Driver/src/stm32f4xx_fmc.c
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_flash.d" -MT"StdPeriph_Driver/src/stm32f4xx_flash.o" -o "StdPeriph_Driver/src/stm32f4xx_flash.o" "../StdPeriph_Driver/src/stm32f4xx_flash.c"
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_exti.c
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_flash_ramfunc.d" -MT"StdPeriph_Driver/src/stm32f4xx_flash_ramfunc.o" -o "StdPeriph_Driver/src/stm32f4xx_flash_ramfunc.o" "../StdPeriph_Driver/src/stm32f4xx_flash_ramfunc.c"
-Invoking: MCU GCC Compiler
- 
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_fmc.d" -MT"StdPeriph_Driver/src/stm32f4xx_fmc.o" -o "StdPeriph_Driver/src/stm32f4xx_fmc.o" "../StdPeriph_Driver/src/stm32f4xx_fmc.c"
-Building file: ../StdPeriph_Driver/src/stm32f4xx_fmip2c.c
-Invoking: MCU GCC Compiler
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_fmip2c.d" -MT"StdPeriph_Driver/src/stm32f4xx_fmip2c.o" -o "StdPeriph_Driver/src/stm32f4xx_fmip2c.o" "../StdPeriph_Driver/src/stm32f4xx_fmip2c.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_fmc.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_flash_ramfunc.c
- 
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_fsmc.c
-Building file: ../StdPeriph_Driver/src/stm32f4xx_gpio.c
-Invoking: MCU GCC Compiler
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_flash.c
-Invoking: MCU GCC Compiler
- 
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_fsmc.d" -MT"StdPeriph_Driver/src/stm32f4xx_fsmc.o" -o "StdPeriph_Driver/src/stm32f4xx_fsmc.o" "../StdPeriph_Driver/src/stm32f4xx_fsmc.c"
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_gpio.d" -MT"StdPeriph_Driver/src/stm32f4xx_gpio.o" -o "StdPeriph_Driver/src/stm32f4xx_gpio.o" "../StdPeriph_Driver/src/stm32f4xx_gpio.c"
-Building file: ../StdPeriph_Driver/src/stm32f4xx_hash.c
-Invoking: MCU GCC Compiler
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_hash.d" -MT"StdPeriph_Driver/src/stm32f4xx_hash.o" -o "StdPeriph_Driver/src/stm32f4xx_hash.o" "../StdPeriph_Driver/src/stm32f4xx_hash.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_fmip2c.c
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_hash_md5.c
-Invoking: MCU GCC Compiler
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_hash_md5.d" -MT"StdPeriph_Driver/src/stm32f4xx_hash_md5.o" -o "StdPeriph_Driver/src/stm32f4xx_hash_md5.o" "../StdPeriph_Driver/src/stm32f4xx_hash_md5.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_fsmc.c
- 
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_gpio.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_hash.c
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_hash_sha1.c
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_i2c.c
-Invoking: MCU GCC Compiler
-Building file: ../StdPeriph_Driver/src/stm32f4xx_iwdg.c
-Invoking: MCU GCC Compiler
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-Invoking: MCU GCC Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_hash_sha1.d" -MT"StdPeriph_Driver/src/stm32f4xx_hash_sha1.o" -o "StdPeriph_Driver/src/stm32f4xx_hash_sha1.o" "../StdPeriph_Driver/src/stm32f4xx_hash_sha1.c"
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_i2c.d" -MT"StdPeriph_Driver/src/stm32f4xx_i2c.o" -o "StdPeriph_Driver/src/stm32f4xx_i2c.o" "../StdPeriph_Driver/src/stm32f4xx_i2c.c"
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_iwdg.d" -MT"StdPeriph_Driver/src/stm32f4xx_iwdg.o" -o "StdPeriph_Driver/src/stm32f4xx_iwdg.o" "../StdPeriph_Driver/src/stm32f4xx_iwdg.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_hash_md5.c
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_lptim.c
-Invoking: MCU GCC Compiler
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_hash_sha1.c
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_iwdg.c
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_lptim.d" -MT"StdPeriph_Driver/src/stm32f4xx_lptim.o" -o "StdPeriph_Driver/src/stm32f4xx_lptim.o" "../StdPeriph_Driver/src/stm32f4xx_lptim.c"
- 
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_ltdc.c
-Building file: ../StdPeriph_Driver/src/stm32f4xx_pwr.c
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_i2c.c
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_ltdc.d" -MT"StdPeriph_Driver/src/stm32f4xx_ltdc.o" -o "StdPeriph_Driver/src/stm32f4xx_ltdc.o" "../StdPeriph_Driver/src/stm32f4xx_ltdc.c"
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
- 
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_pwr.d" -MT"StdPeriph_Driver/src/stm32f4xx_pwr.o" -o "StdPeriph_Driver/src/stm32f4xx_pwr.o" "../StdPeriph_Driver/src/stm32f4xx_pwr.c"
-Building file: ../StdPeriph_Driver/src/stm32f4xx_qspi.c
-Invoking: MCU GCC Compiler
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_qspi.d" -MT"StdPeriph_Driver/src/stm32f4xx_qspi.o" -o "StdPeriph_Driver/src/stm32f4xx_qspi.o" "../StdPeriph_Driver/src/stm32f4xx_qspi.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_lptim.c
- 
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_pwr.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_ltdc.c
-Building file: ../StdPeriph_Driver/src/stm32f4xx_rcc.c
- 
- 
-Invoking: MCU GCC Compiler
-Building file: ../StdPeriph_Driver/src/stm32f4xx_rng.c
-Building file: ../StdPeriph_Driver/src/stm32f4xx_rtc.c
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_rcc.d" -MT"StdPeriph_Driver/src/stm32f4xx_rcc.o" -o "StdPeriph_Driver/src/stm32f4xx_rcc.o" "../StdPeriph_Driver/src/stm32f4xx_rcc.c"
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_rng.d" -MT"StdPeriph_Driver/src/stm32f4xx_rng.o" -o "StdPeriph_Driver/src/stm32f4xx_rng.o" "../StdPeriph_Driver/src/stm32f4xx_rng.c"
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_rtc.d" -MT"StdPeriph_Driver/src/stm32f4xx_rtc.o" -o "StdPeriph_Driver/src/stm32f4xx_rtc.o" "../StdPeriph_Driver/src/stm32f4xx_rtc.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_qspi.c
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_sai.c
-Invoking: MCU GCC Compiler
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_sai.d" -MT"StdPeriph_Driver/src/stm32f4xx_sai.o" -o "StdPeriph_Driver/src/stm32f4xx_sai.o" "../StdPeriph_Driver/src/stm32f4xx_sai.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_rng.c
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_sdio.c
-Invoking: MCU GCC Compiler
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_rcc.c
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_sdio.d" -MT"StdPeriph_Driver/src/stm32f4xx_sdio.o" -o "StdPeriph_Driver/src/stm32f4xx_sdio.o" "../StdPeriph_Driver/src/stm32f4xx_sdio.c"
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_spdifrx.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_rtc.c
-Invoking: MCU GCC Compiler
- 
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-Building file: ../StdPeriph_Driver/src/stm32f4xx_spi.c
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_spdifrx.d" -MT"StdPeriph_Driver/src/stm32f4xx_spdifrx.o" -o "StdPeriph_Driver/src/stm32f4xx_spdifrx.o" "../StdPeriph_Driver/src/stm32f4xx_spdifrx.c"
-Invoking: MCU GCC Compiler
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_spi.d" -MT"StdPeriph_Driver/src/stm32f4xx_spi.o" -o "StdPeriph_Driver/src/stm32f4xx_spi.o" "../StdPeriph_Driver/src/stm32f4xx_spi.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_sai.c
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_syscfg.c
-Invoking: MCU GCC Compiler
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_spdifrx.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_sdio.c
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_syscfg.d" -MT"StdPeriph_Driver/src/stm32f4xx_syscfg.o" -o "StdPeriph_Driver/src/stm32f4xx_syscfg.o" "../StdPeriph_Driver/src/stm32f4xx_syscfg.c"
- 
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_tim.c
-Building file: ../StdPeriph_Driver/src/stm32f4xx_usart.c
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_usart.d" -MT"StdPeriph_Driver/src/stm32f4xx_usart.o" -o "StdPeriph_Driver/src/stm32f4xx_usart.o" "../StdPeriph_Driver/src/stm32f4xx_usart.c"
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_tim.d" -MT"StdPeriph_Driver/src/stm32f4xx_tim.o" -o "StdPeriph_Driver/src/stm32f4xx_tim.o" "../StdPeriph_Driver/src/stm32f4xx_tim.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_spi.c
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_wwdg.c
-Invoking: MCU GCC Compiler
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_wwdg.d" -MT"StdPeriph_Driver/src/stm32f4xx_wwdg.o" -o "StdPeriph_Driver/src/stm32f4xx_wwdg.o" "../StdPeriph_Driver/src/stm32f4xx_wwdg.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_syscfg.c
- 
-Building file: ../LCD_DRIVER/STM32F446_I2C_LCD_Driver.c
-Invoking: MCU GCC Compiler
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_usart.c
-D:\PENDRIVE\EMBEDDED_SYSTEM\STM32_PROJECTS\GSM_PROJECT\BASIC_MOBILE_USING_GSM\Debug
- 
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F446xx -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/core" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/StdPeriph_Driver/inc" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/CMSIS/device" -I"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"LCD_DRIVER/STM32F446_I2C_LCD_Driver.d" -MT"LCD_DRIVER/STM32F446_I2C_LCD_Driver.o" -o "LCD_DRIVER/STM32F446_I2C_LCD_Driver.o" "../LCD_DRIVER/STM32F446_I2C_LCD_Driver.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_tim.c
- 
-../LCD_DRIVER/STM32F446_I2C_LCD_Driver.c:42:13: warning: 'I2C_Config' defined but not used [-Wunused-function]
- static void I2C_Config(void)
-             ^~~~~~~~~~
-../LCD_DRIVER/STM32F446_I2C_LCD_Driver.c:16:13: warning: 'GPIO_Config' defined but not used [-Wunused-function]
- static void GPIO_Config(void)
-             ^~~~~~~~~~~
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_wwdg.c
- 
-Finished building: ../LCD_DRIVER/STM32F446_I2C_LCD_Driver.c
- 
-Building target: BASIC_MOBILE_USING_GSM.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/PENDRIVE/EMBEDDED_SYSTEM/STM32_PROJECTS/GSM_PROJECT/BASIC_MOBILE_USING_GSM/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "BASIC_MOBILE_USING_GSM.elf" @"objects.list"   -lm
-Finished building target: BASIC_MOBILE_USING_GSM.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "BASIC_MOBILE_USING_GSM.elf" "BASIC_MOBILE_USING_GSM.bin"
-arm-none-eabi-size "BASIC_MOBILE_USING_GSM.elf"
-   text	   data	    bss	    dec	    hex	filename
-   1400	   1080	   1092	   3572	    df4	BASIC_MOBILE_USING_GSM.elf
+Finished building: ../StdPeriph_Driver/src/misc.c
  
 
-22:37:15 Build Finished (took 18s.349ms)
+15:59:26 Build Finished (took 2s.35ms)
 

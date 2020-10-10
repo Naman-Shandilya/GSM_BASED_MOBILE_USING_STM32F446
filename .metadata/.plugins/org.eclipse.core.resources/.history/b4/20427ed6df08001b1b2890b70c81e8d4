@@ -1,0 +1,83 @@
+/*
+ * GSM_DRIVER.c
+ *
+ *  Created on: 07-Oct-2020
+ *      Author: NAMAN
+ */
+
+#include"GSM_DRIVER.h"
+#include"string.h"
+#include"stdint.h"
+
+USART_InitTypeDef usart_init;
+DMA_InitType
+
+//RX buffer to store incoming data from GSM module
+char RX_Buffer[RX_BUFFER_SIZE];
+
+//to store incomming SMS number
+char Incomins_SMS_Phone_Num[13] = {'\0'};
+
+//to store SMS recieved
+char Incoming_SMS_Message[100] = {'\0'};
+
+//-------------Private functions for UART and DMA configuration
+
+/**
+  *@brief    Configure UART
+  *@param    None
+  *@retval   None
+*/
+static void UART_Config(void)
+{
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA,ENABLE);
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);
+
+	//GPIO PIN CONFIGURATION
+	GPIO_InitTypeDef uart_pin;
+
+	uart_pin.GPIO_Pin = GPIO_Pin_2;
+	uart_pin.GPIO_Mode = GPIO_Mode_AF;
+	uart_pin.GPIO_OType = GPIO_OType_PP;
+	uart_pin.GPIO_PuPd = GPIO_PuPd_UP;
+	uart_pin.GPIO_Speed = GPIO_Fast_Speed;
+	GPIO_Init(GPIOA, &uart_pin);
+
+
+	uart_pin.GPIO_Pin = GPIO_Pin_2;
+		uart_pin.GPIO_Mode = GPIO_Mode_AF;
+		uart_pin.GPIO_Speed = GPIO_Fast_Speed;
+		GPIO_Init(GPIOA, &uart_pin);
+
+
+
+	//setting gpio pin to alternate mode
+	GPIO_PinAFConfig(GPIOA, GPIO_PinSource2, GPIO_AF_USART2);
+	GPIO_PinAFConfig(GPIOA, GPIO_PinSource3, GPIO_AF_USART2);
+
+	//UART configuration
+	usart_init.USART_BaudRate = 115200;
+	usart_init.USART_Mode = USART_Mode_Tx | USART_Mode_Rx;
+	usart_init.USART_WordLength = USART_WordLength_8b;
+	usart_init.USART_StopBits = USART_StopBits_1;
+	usart_init.USART_Parity = USART_Parity_No;
+	usart_init.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+
+	//config uasrt2
+	USART_Init(USART2, &usart_init);
+
+	//enable usart2
+	USART_Cmd(USART2, ENABLE);
+
+	//Enable RXNE interrupt
+	USART_ITConfig(USART2, USART_IT_RXNE, ENABLE);
+
+	//Enable USART glabal interrupt
+	NVIC_EnableIRQ(USART2_IRQn);
+	NVIC_SetPriority(USART2_IRQn, 2);
+
+
+
+}
+
+

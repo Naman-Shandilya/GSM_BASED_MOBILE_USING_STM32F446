@@ -1,0 +1,12 @@
+/*
+ * STM32F446_KEYPAD_DRIVER.c
+ *
+ *  Created on: 06-Oct-2020
+ *      Author: NAMAN
+ */
+
+#include"STM32F446_KEYPAD_DRIVER.h"
+#include<stdint.h>
+
+/* Row pins are output*/
+#define SET_ROW_1_HIGH		GPIO_Wr
